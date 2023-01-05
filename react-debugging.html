@@ -65,12 +65,14 @@
         // No need to change anything ABOVE this line ^
 
         return (
+          <>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={shuffle}>
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
+            
           </button>
           <div style={handStyles}>
             {hand.map((card, index) => {
@@ -80,7 +82,7 @@
                 </div>
               )
             })}
-          </div>
+          </div></>
         )
       }
 
